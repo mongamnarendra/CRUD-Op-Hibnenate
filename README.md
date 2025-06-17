@@ -2,8 +2,8 @@ here i used hibernate 7.0.2 version in this version the CRUD operation method na
 <table border="1" cellspacing="0" cellpadding="5">
   <thead>
     <tr>
-      <th>Session Method 1</th>
-      <th>Session Method 2</th>
+      <th>Older </th>
+      <th>New</th></th>
       <th>Description</th>
     </tr>
   </thead>
@@ -29,34 +29,14 @@ here i used hibernate 7.0.2 version in this version the CRUD operation method na
       <td>saveOrUpdate(Object)</td>
       <td>merge(Object)</td>
       <td>
-        <b>saveOrUpdate()</b> either saves or updates depending on the entity's state.<br>
+        <b>saveOrUpdate() or update()</b> either saves or updates depending on the entity's state.<br>
         <b>merge()</b> copies the state of a detached entity to a persistent one and returns the updated instance.
       </td>
     </tr>
     <tr>
       <td>delete(Object)</td>
-      <td>—</td>
+      <td>remove(Object)</td>
       <td>Removes the persistent entity from the database.</td>
-    </tr>
-    <tr>
-      <td>update(Object)</td>
-      <td>—</td>
-      <td>Updates the entity in the database. Works only with a persistent object.</td>
-    </tr>
-    <tr>
-      <td>—</td>
-      <td>refresh(Object)</td>
-      <td>Re-fetches the object from the database, overwriting local changes.</td>
-    </tr>
-    <tr>
-      <td>—</td>
-      <td>clear()</td>
-      <td>Clears the session by detaching all persistent objects.</td>
-    </tr>
-    <tr>
-      <td>—</td>
-      <td>flush()</td>
-      <td>Forces Hibernate to synchronize the current state of the session with the database.</td>
     </tr>
   </tbody>
 </table>
